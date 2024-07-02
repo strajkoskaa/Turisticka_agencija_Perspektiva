@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Туристичка агенција „ПЕРСПЕКТИВА“</title>
+    <link rel="stylesheet" href="Dizajn.css" >
+    <link rel="icon" href="Logo.png" type="image/png">
+</head>
+
+<body>
+<main><div class="osnovna zelbi_sugestii">
+    <header>
+        <img src="Logo.png">
+        <nav>
+            <a href="index.html">Дома</a>
+            <a href="Ponudi.html">Понуди</a>
+            <a href="Zebli_i_sugestii.html" class="aktivna">Желби и сугестии</a>
+            <a href="Kontakt.html">Контакт</a>
+        </nav>
+    </header>
+    <article>
+        <form action="/submit" method="post">
+            <div>
+                <div>
+                    <div>
+                        <label for="ponuda">Желба/сугестија за понуда со код:</label>
+                        <input type="number" id="ponuda" name="ponuda" placeholder="пр. 101" min="101" max="104">
+                    </div>
+                    <div>
+                        <label for="dopaganje">Што Ви се допаѓа во понудата?</label>
+                        <textarea id="dopaganje" name="dopaganje"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="nedopaganje">Што не Ви се допаѓа во понудата?</label>
+                        <textarea id="nedopaganje" name="nedopaganje"></textarea>
+                    </div>
+                    <div>
+                        <label for="podobruvanje">Како Вие би ја подобриле?</label>
+                        <textarea id="podobruvanje" name="podobruvanje"></textarea>
+                    </div>
+            </div>
+            </div>
+            <button type="submit">Испрати</button>
+        </form>
+
+    </article>
+</div></main>
+</body>
+</html>

@@ -1,0 +1,417 @@
+body{
+    font-family: Bahnschrift, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('Pozadina.jpg ');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(15px);
+    z-index: -1;
+}
+main{
+    height: 80%;
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+}
+main .osnovna{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    border: solid black 3px;
+
+    display: flex;
+    flex-direction: column;
+}
+main .osnovna header{
+    box-sizing: border-box;
+    border-radius: 25px 25px 0 0;
+    height: 15%;
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main .osnovna header img{
+    height: 100%;
+    width: auto;
+    margin-left: 2.5%;
+}
+main .osnovna header nav{
+    margin-right: 2.5%;
+    font-size: 15px;
+    font-weight: bold;
+}
+main .osnovna header nav a{
+    display: inline-block;
+    margin: 20px 2px 2px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(181,110,59);
+}
+main .osnovna header nav a:hover,
+main .osnovna header nav a.aktivna{
+    background-color: rgb(181,110,59);
+    color: white;
+    text-decoration: none;
+}
+
+.pocetna article{
+    box-sizing: border-box;
+    height: 85%;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+    background-image: url(Pozadina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pocetna article p:first-of-type{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding: 0;
+    margin: 0 20px 0 0;
+    text-align: right;
+}
+.pocetna article p:last-of-type{
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 5px 20px 0 0;
+    text-align: right;
+}
+
+.zelbi_sugestii article{
+    width: 100%;
+    height: 85%;
+    background-color: rgb(181,110,59);
+    border-radius: 0 0 25px 25px;
+}
+.zelbi_sugestii article form{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.zelbi_sugestii article form > div{
+    width: 90%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.zelbi_sugestii article form > div > div{
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.zelbi_sugestii article form label{
+    margin-bottom: 3px;
+    padding-bottom: 0;
+    color: white;
+}
+.zelbi_sugestii article form input{
+    width: 30%;
+    border: none;
+}
+.zelbi_sugestii article form textarea{
+    font-family: Bahnschrift, sans-serif;
+    width: 95%;
+    height: 70px;
+    border: none;
+}
+.zelbi_sugestii article form button{
+    width: 15%;
+    height: 10%;
+    border: solid white 2px;
+    background-color: rgb(181,110,59);
+    color: white;
+    font-size: 12px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+form > div:first-of-type > div:first-of-type div:last-of-type textarea{
+    width: 95%;
+    height: 130px;
+}
+
+.ponudi article,
+.kontakt article,
+.ponuda article{
+    width: 100%;
+    height: 85%;
+    background-color: rgb(181,110,59);
+    border-radius: 0 0 25px 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.kontakt article > div{
+    height: 100%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.kontakt article > div > div{
+    width: 45%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.kontakt article p{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.kontakt article fieldset{
+    padding: 7px;
+    border: solid white 3px;
+    color: white;
+}
+.kontakt article div:last-of-type fieldset{
+    display: flex;
+    flex-direction: column;
+}
+.kontakt article  a{
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    font-size: 15px;
+    text-align: center;
+    margin: 2px;
+    padding: 7px;
+    background-color: white;
+    color: rgb(181,110,59);
+    text-decoration: none;
+    font-weight: bold;
+}
+.kontakt article a:hover{
+    border: 1px solid white;
+    background-color: rgb(181,110,59);
+    color: white;
+}
+.kontakt iframe{
+    border:0;
+    width: 100%;
+}
+.ponudi article{
+    justify-content: center;
+}
+.ponudi article a{
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    height: 80%;
+    width: 20%;
+    margin: 0 8px;
+}
+.ponudi article a:hover{
+    border: 5px solid transparent;
+}
+.ponudi article a > div{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ponudi article a > div > div:first-of-type{
+    box-sizing: border-box;
+    height: 65%;
+    width: 100%;
+    border: solid white 5px;
+}
+.ponudi article a:first-of-type > div > div:first-of-type{
+    background-image: url(Italija.jpg);
+    background-size: cover;
+}
+.ponudi article a:nth-of-type(2) > div > div:first-of-type{
+    background-image: url(BosnaIHercegovina.jpg);
+    background-size: cover;
+}
+.ponudi article a:nth-of-type(3) > div > div:first-of-type{
+    background-image: url(Spanija.jpg);
+    background-size: cover;
+}
+.ponudi article a:last-of-type > div > div:first-of-type{
+    background-image: url(Francija.jpg);
+    background-size: cover;
+}
+.ponudi article a > div > div:last-of-type{
+    box-sizing: border-box;
+    height: 35%;
+    width: 100%;
+    border: solid white 5px;
+    border-top: dashed rgb(181,110,59) 2px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.ponudi article a > div > div:last-of-type p,
+.ponudi article a > div > div:last-of-type > div p{
+    color: white;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+.ponudi article a > div > div:last-of-type p{
+    color: rgb(181,110,59);
+    font-weight: bold;
+}
+.ponudi article a > div > div:last-of-type div{
+    background-color: rgb(181,110,59);
+}
+.ponudi article a > div > div:last-of-type p:nth-of-type(2){
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+.ponudi article a > div > div:last-of-type > p:last-of-type{
+    font-size: 12px;
+}
+
+.ponuda article > div{
+    width: 90%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ponuda article > div > div:first-of-type{
+    height: 100%;
+    width: 70%;
+    border-radius: 0 5px 5px 0;
+    border: solid white 3px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ponuda article > div > div:first-of-type > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ponuda article > div > div:first-of-type > div:last-of-type > fieldset:first-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ponuda article > div > div:first-of-type > div:last-of-type > fieldset:first-of-type div:first-of-type p{
+    text-align: end;
+    font-size: 15px;
+}
+.ponuda article > div > div:first-of-type > div:last-of-type > fieldset:first-of-type div:last-of-type{
+    margin-left: 5px;
+}
+.ponuda article > div > div:first-of-type > div:last-of-type > fieldset:first-of-type div:last-of-type p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.ponuda article > div > div:first-of-type a{
+    display: block;
+    padding: 7px;
+    background-color: rgb(181,110,59);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.ponuda article > div > div:first-of-type a:hover{
+    background-color: rgb(126, 71, 23);
+}
+.ponuda article > div > div:first-of-type > div:first-of-type fieldset:first-of-type p:first-of-type{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.ponuda article > div > div:first-of-type > div:first-of-type fieldset:first-of-type p:last-of-type{
+    font-size: 10px;
+}
+.ponuda article > div > div:first-of-type p{
+    padding: 0;
+    margin: 0;
+}
+.ponuda article > div > div:first-of-type fieldset{
+    border: solid rgb(181,110,59) 3px;
+    color: rgb(181,110,59);
+    padding: 5px;
+    font-size: 13px;
+}
+.ponuda article > div > div:first-of-type fieldset legend{
+    font-weight: bold;
+}
+.ponuda article > div > div:first-of-type > div{
+    width: 45%;
+    height: 90%;
+}
+.ponuda article > div > div:nth-of-type(2){
+    border-left: dashed white 3px;
+    height: 98%;
+}
+.ponuda article > div > div:last-of-type{
+    height: 100%;
+    width: 30%;
+    background-size: cover;
+    border: solid white 3px;
+    border-radius: 5px 0 0 5px;
+}
+
+.italija article > div > div:last-of-type{
+    background-image: url(Italija.jpg);
+}
+
+.bosna_i_hercegovina article > div > div:last-of-type{
+    background-image: url(BosnaIHercegovina.jpg);
+}
+
+.spanija article > div > div:last-of-type{
+    background-image: url(Spanija.jpg);
+}
+
+.francija article > div > div:last-of-type{
+    background-image: url(Francija.jpg);
+}
